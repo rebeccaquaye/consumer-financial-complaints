@@ -1,1 +1,9 @@
 /Data/Complaints_Dataset.csv
+# Large raw data (download with the sampling script instead)
+Data/Complaints_Dataset.csv
+cfpb_archive/
+
+# Python clutter
+__pycache__/
+*.pyc
+.venv/
