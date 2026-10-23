@@ -7,3 +7,4 @@ wordcloud
 requests
 anthropic
 python-dotenv
+vaderSentiment
