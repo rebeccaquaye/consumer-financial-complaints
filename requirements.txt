@@ -1,3 +1,9 @@
 pandas
 numpy
+matplotlib
+seaborn
+scikit-learn
+wordcloud
 requests
+anthropic
+python-dotenv
