@@ -1,0 +1,13 @@
+Actual product,Predicted product,Count
+"Money transfer, virtual currency, or money service",Checking or savings account,20
+Prepaid card,"Money transfer, virtual currency, or money service",18
+Debt collection,Debt or credit management,17
+Checking or savings account,"Money transfer, virtual currency, or money service",16
+Debt collection,Credit reporting or other personal consumer reports,16
+Debt or credit management,Debt collection,15
+Vehicle loan or lease,"Payday loan, title loan, personal loan, or advance loan",14
+Prepaid card,Checking or savings account,12
+Credit card,Prepaid card,10
+"Money transfer, virtual currency, or money service",Prepaid card,10
+Checking or savings account,Credit card,10
+Debt or credit management,Credit card,9
