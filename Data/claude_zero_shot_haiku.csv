@@ -2,7 +2,7 @@ Complaint ID,true_product,claude_product,model,input_tokens,output_tokens
 16983019,Mortgage,Mortgage,claude-haiku-5-5,12685,7
 21642170,Debt or credit management,"UNMATCHED: Money transfer, virtual currency, or money service
 
-Wait, that's not right. The complaint is",claude-haiku-5-5,861,30
+Wait, that's incorrect. The compla",claude-haiku-5-5,861,30
 22330665,Debt or credit management,Credit card,claude-haiku-5-5,716,6
 17887813,Debt collection,Debt collection,claude-haiku-5-5,672,7
 19355999,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,660,17
@@ -24,7 +24,7 @@ Wait, that's not right. The complaint is",claude-haiku-5-5,861,30
 14989067,Debt collection,Debt collection,claude-haiku-5-5,1085,7
 21212275,"Money transfer, virtual currency, or money service",Checking or savings account,claude-haiku-5-5,347,9
 18606058,Debt collection,Credit reporting or other personal consumer reports,claude-haiku-5-5,2405,17
-17753959,Credit reporting or other personal consumer reports,"UNMATCHED: I can't determine a product category from this complaint. It doesn't mention any financial product, account type, or",claude-haiku-5-5,232,30
+17753959,Credit reporting or other personal consumer reports,"UNMATCHED: I can't determine the product category from this complaint. It doesn't mention any financial product, account type, or",claude-haiku-5-5,232,30
 18966800,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,1838,12
 15818566,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,896,17
 24129726,Prepaid card,Checking or savings account,claude-haiku-5-5,217,9
@@ -60,7 +60,7 @@ Wait, that's not right. The complaint is",claude-haiku-5-5,861,30
 18870628,Debt collection,Credit reporting or other personal consumer reports,claude-haiku-5-5,346,17
 18317959,Credit card,Credit card,claude-haiku-5-5,978,6
 21314337,Mortgage,Mortgage,claude-haiku-5-5,1183,7
-20775074,Debt or credit management,"UNMATCHED: I can't determine the product category from this complaint, since it doesn't mention any financial product, account type,",claude-haiku-5-5,278,30
+20775074,Debt or credit management,"UNMATCHED: I'm unable to determine the product category from this complaint, as it doesn't mention any financial product,",claude-haiku-5-5,278,30
 16793919,Debt or credit management,Debt or credit management,claude-haiku-5-5,337,9
 20793855,Student loan,Student loan,claude-haiku-5-5,489,6
 17831012,Student loan,Student loan,claude-haiku-5-5,843,6
@@ -126,7 +126,7 @@ Wait, that's not right. The complaint is",claude-haiku-5-5,861,30
 20495939,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,1375,12
 19119818,Credit card,Credit card,claude-haiku-5-5,994,6
 15309598,Debt or credit management,Checking or savings account,claude-haiku-5-5,623,9
-18814109,Vehicle loan or lease,"UNMATCHED: I cannot determine a specific financial product category from this complaint, as it describes a personal health situation and",claude-haiku-5-5,313,30
+18814109,Vehicle loan or lease,UNMATCHED: I'm unable to determine a specific product category from this complaint,claude-haiku-5-5,313,21
 23694465,Checking or savings account,Checking or savings account,claude-haiku-5-5,536,9
 18638450,Vehicle loan or lease,Credit reporting or other personal consumer reports,claude-haiku-5-5,356,17
 16867183,"Money transfer, virtual currency, or money service",Checking or savings account,claude-haiku-5-5,320,9
@@ -140,7 +140,7 @@ Wait, that's not right. The complaint is",claude-haiku-5-5,861,30
 22637811,Student loan,Student loan,claude-haiku-5-5,632,6
 21947963,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: Vehicle loan or lease
 
-Wait, that is incorrect. The complaint concerns a",claude-haiku-5-5,800,30
+Wait, that is incorrect. A solar loan is a home",claude-haiku-5-5,800,30
 16151199,Debt collection,Debt collection,claude-haiku-5-5,312,7
 18052964,Credit card,Credit card,claude-haiku-5-5,480,6
 16205122,Prepaid card,Prepaid card,claude-haiku-5-5,845,8
@@ -259,7 +259,7 @@ Wait, that is incorrect. The complaint concerns a",claude-haiku-5-5,800,30
 15603765,Debt or credit management,Debt or credit management,claude-haiku-5-5,376,9
 24507566,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,650,17
 21676912,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,633,22
-18506300,Checking or savings account,"UNMATCHED: Personal loan, payday loan, title loan, or advance loan",claude-haiku-5-5,514,22
+18506300,Checking or savings account,UNMATCHED: Personal loan,claude-haiku-5-5,514,7
 23873862,Credit card,Credit card,claude-haiku-5-5,688,6
 18165247,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,543,17
 18612172,Mortgage,Mortgage,claude-haiku-5-5,1149,7
@@ -289,7 +289,7 @@ Wait, that is incorrect. The complaint concerns a",claude-haiku-5-5,800,30
 20072186,Mortgage,Mortgage,claude-haiku-5-5,253,7
 20681525,Prepaid card,Prepaid card,claude-haiku-5-5,675,8
 19929289,Debt collection,Credit reporting or other personal consumer reports,claude-haiku-5-5,347,17
-16311018,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: I can't tell from this complaint. It's too fragmented to identify a product, and the text mentions",claude-haiku-5-5,251,30
+16311018,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: I can't determine the product category from this complaint. It appears to be mostly redacted, with only a f",claude-haiku-5-5,251,30
 17954245,Checking or savings account,Checking or savings account,claude-haiku-5-5,1125,9
 16692334,Credit reporting or other personal consumer reports,Vehicle loan or lease,claude-haiku-5-5,575,12
 15555291,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,241,17
@@ -323,7 +323,7 @@ Wait, that is incorrect. The complaint concerns a",claude-haiku-5-5,800,30
 19793773,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,1485,12
 21779091,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: Vehicle loan or lease
 
-Wait, that's incorrect. The complaint concerns a",claude-haiku-5-5,1856,30
+No, that's wrong. The complaint concerns a home solar",claude-haiku-5-5,1856,30
 20489478,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,2836,12
 20274458,Prepaid card,Prepaid card,claude-haiku-5-5,289,8
 20069666,Checking or savings account,Checking or savings account,claude-haiku-5-5,632,9
@@ -398,7 +398,7 @@ Wait, that's incorrect. The complaint concerns a",claude-haiku-5-5,1856,30
 16395046,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,371,12
 23586039,"Money transfer, virtual currency, or money service",Checking or savings account,claude-haiku-5-5,880,9
 15855296,Credit card,Credit reporting or other personal consumer reports,claude-haiku-5-5,326,17
-23579290,Credit reporting or other personal consumer reports,"UNMATCHED: I cannot determine the product category from this text, as it contains no details about the underlying financial product or issue",claude-haiku-5-5,325,30
+23579290,Credit reporting or other personal consumer reports,"UNMATCHED: I can't determine the product category from this complaint, since it contains only a general threat to escalate to the C",claude-haiku-5-5,325,30
 15479820,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",claude-haiku-5-5,407,17
 20104919,Mortgage,Mortgage,claude-haiku-5-5,539,7
 20538159,Mortgage,Mortgage,claude-haiku-5-5,536,7
@@ -595,7 +595,7 @@ Wait, that's incorrect. The complaint concerns a",claude-haiku-5-5,1856,30
 24119149,Debt collection,Debt collection,claude-haiku-5-5,311,7
 16020796,Debt or credit management,Student loan,claude-haiku-5-5,594,6
 15590928,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,420,12
-18521111,Vehicle loan or lease,UNMATCHED: I can't determine the product category from this complaint. It contains only redacted placeholders and a partial S,claude-haiku-5-5,247,30
+18521111,Vehicle loan or lease,UNMATCHED: I can't determine the product category from this complaint. It contains only redacted placeholders and a partially red,claude-haiku-5-5,247,30
 17369590,Debt collection,Debt collection,claude-haiku-5-5,319,7
 23301347,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",claude-haiku-5-5,563,17
 20073150,Checking or savings account,Checking or savings account,claude-haiku-5-5,637,9
@@ -620,7 +620,7 @@ Wait, that's incorrect. The complaint concerns a",claude-haiku-5-5,1856,30
 16474160,Mortgage,Mortgage,claude-haiku-5-5,2903,7
 20169298,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,737,17
 15339955,Credit card,Credit card,claude-haiku-5-5,3364,6
-19967740,Debt collection,"UNMATCHED: I cannot determine the product category from this complaint, as it does not specify the financial product involved",claude-haiku-5-5,252,30
+19967740,Debt collection,"UNMATCHED: I'm unable to determine the product category from this complaint, since it only mentions disputes and an attach",claude-haiku-5-5,252,30
 21722452,Mortgage,Vehicle loan or lease,claude-haiku-5-5,707,12
 15805868,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,516,22
 17414992,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,1093,17
@@ -729,7 +729,7 @@ Wait, that's incorrect. The complaint concerns a",claude-haiku-5-5,1856,30
 23906600,Debt or credit management,Debt or credit management,claude-haiku-5-5,391,9
 23043288,Debt or credit management,Credit reporting or other personal consumer reports,claude-haiku-5-5,913,17
 20963183,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,773,12
-17297821,Credit reporting or other personal consumer reports,"UNMATCHED: I can't determine a product category from this complaint. It doesn't mention any financial product, account, or service",claude-haiku-5-5,225,30
+17297821,Credit reporting or other personal consumer reports,"UNMATCHED: I can't determine a product category from this text. It doesn't describe any financial product, account, or transaction",claude-haiku-5-5,225,30
 17900901,Prepaid card,"Money transfer, virtual currency, or money service",claude-haiku-5-5,310,17
 21298842,Debt collection,Debt collection,claude-haiku-5-5,462,7
 20760714,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,871,12
@@ -788,7 +788,7 @@ Wait, that's incorrect. The complaint concerns a",claude-haiku-5-5,1856,30
 17966131,Debt collection,Debt collection,claude-haiku-5-5,523,7
 15775619,"Payday loan, title loan, personal loan, or advance loan",Student loan,claude-haiku-5-5,463,6
 24415337,Debt collection,Credit reporting or other personal consumer reports,claude-haiku-5-5,344,17
-19541868,Debt or credit management,UNMATCHED: Personal loan,claude-haiku-5-5,505,7
+19541868,Debt or credit management,"Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,505,22
 22391083,Mortgage,Vehicle loan or lease,claude-haiku-5-5,327,12
 17972110,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,739,12
 18261953,Credit card,Credit card,claude-haiku-5-5,471,6
@@ -859,9 +859,7 @@ Wait, that's incorrect. The complaint concerns a",claude-haiku-5-5,1856,30
 16808293,Student loan,Student loan,claude-haiku-5-5,321,6
 15159134,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",claude-haiku-5-5,643,17
 16376560,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,374,22
-19517185,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: Vehicle loan or lease
-
-Wait, that's incorrect. The complaint concerns a",claude-haiku-5-5,695,30
+19517185,"Payday loan, title loan, personal loan, or advance loan",Vehicle loan or lease,claude-haiku-5-5,695,12
 19559938,Debt or credit management,Credit reporting or other personal consumer reports,claude-haiku-5-5,540,17
 16425740,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,509,12
 16169423,Prepaid card,Prepaid card,claude-haiku-5-5,728,8
@@ -890,7 +888,7 @@ Wait, that's incorrect. The complaint concerns a",claude-haiku-5-5,695,30
 16279787,Prepaid card,Checking or savings account,claude-haiku-5-5,231,9
 18724283,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,599,17
 24119807,Prepaid card,Prepaid card,claude-haiku-5-5,354,8
-20103667,"Money transfer, virtual currency, or money service",UNMATCHED: Other financial product or service,claude-haiku-5-5,957,9
+20103667,"Money transfer, virtual currency, or money service",Checking or savings account,claude-haiku-5-5,957,9
 22792425,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,285,12
 16548933,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,263,22
 22518193,Debt or credit management,Credit reporting or other personal consumer reports,claude-haiku-5-5,1754,17
@@ -996,7 +994,7 @@ Wait, that's incorrect. The complaint concerns a",claude-haiku-5-5,695,30
 21676016,Student loan,Student loan,claude-haiku-5-5,624,6
 17671900,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,288,12
 16087419,Debt or credit management,Debt collection,claude-haiku-5-5,290,7
-15328639,"Payday loan, title loan, personal loan, or advance loan",UNMATCHED: Personal loan,claude-haiku-5-5,2313,7
+15328639,"Payday loan, title loan, personal loan, or advance loan",Vehicle loan or lease,claude-haiku-5-5,2313,12
 15159086,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",claude-haiku-5-5,392,17
 16485872,Checking or savings account,Checking or savings account,claude-haiku-5-5,1592,9
 17177364,Student loan,Student loan,claude-haiku-5-5,591,6
@@ -1089,7 +1087,7 @@ Wait, that's incorrect. The complaint concerns a",claude-haiku-5-5,695,30
 18397257,Credit card,Credit reporting or other personal consumer reports,claude-haiku-5-5,419,17
 17764074,Student loan,Debt collection,claude-haiku-5-5,302,7
 19042555,Debt or credit management,Credit reporting or other personal consumer reports,claude-haiku-5-5,219,17
-15929736,Debt or credit management,"UNMATCHED: I can't determine the product category from this complaint alone, as it doesn't name a financial product or service",claude-haiku-5-5,222,30
+15929736,Debt or credit management,"UNMATCHED: I can't determine the product category from this complaint alone—it doesn't mention any specific financial product,",claude-haiku-5-5,222,30
 18043617,Student loan,Student loan,claude-haiku-5-5,469,6
 19998448,Credit card,Credit card,claude-haiku-5-5,1003,6
 15863385,Prepaid card,Prepaid card,claude-haiku-5-5,467,8
@@ -1233,9 +1231,7 @@ Wait, that's incorrect. The complaint concerns a",claude-haiku-5-5,695,30
 21991635,Student loan,Student loan,claude-haiku-5-5,717,6
 19068159,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",claude-haiku-5-5,385,17
 15144020,Credit card,Credit card,claude-haiku-5-5,616,6
-24184884,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: Vehicle loan or lease
-
-Wait, that is incorrect. The complaint concerns a",claude-haiku-5-5,766,30
+24184884,"Payday loan, title loan, personal loan, or advance loan",Vehicle loan or lease,claude-haiku-5-5,766,12
 15130731,Debt collection,Debt collection,claude-haiku-5-5,477,7
 19704740,Credit card,Credit reporting or other personal consumer reports,claude-haiku-5-5,663,17
 16964528,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,497,12
@@ -1301,7 +1297,7 @@ Wait, that is incorrect. The complaint concerns a",claude-haiku-5-5,766,30
 19361781,Prepaid card,"Money transfer, virtual currency, or money service",claude-haiku-5-5,492,17
 16872093,Checking or savings account,Checking or savings account,claude-haiku-5-5,526,9
 16885300,Student loan,Credit reporting or other personal consumer reports,claude-haiku-5-5,248,17
-23688718,Student loan,UNMATCHED: I'm unable to determine a financial product category from this text. The complaint describes a disability and being unable,claude-haiku-5-5,235,30
+23688718,Student loan,"UNMATCHED: I cannot determine a product category from this complaint, as it contains no information about a financial product or service",claude-haiku-5-5,235,30
 20582532,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,302,17
 16165066,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,684,17
 18030379,Prepaid card,Checking or savings account,claude-haiku-5-5,357,9
@@ -1346,7 +1342,7 @@ Wait, that is incorrect. The complaint concerns a",claude-haiku-5-5,766,30
 23464361,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,378,12
 20222363,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: Vehicle loan or lease
 
-Wait, correcting that: the complaint concerns a water tre",claude-haiku-5-5,463,30
+Wait, that's incorrect. The complaint is about a water",claude-haiku-5-5,463,30
 18319259,Mortgage,Mortgage,claude-haiku-5-5,408,7
 19358314,Student loan,Student loan,claude-haiku-5-5,674,6
 18572457,Debt or credit management,Debt or credit management,claude-haiku-5-5,716,9
@@ -1436,7 +1432,7 @@ Wait, correcting that: the complaint concerns a water tre",claude-haiku-5-5,463,
 16847054,Debt collection,Credit reporting or other personal consumer reports,claude-haiku-5-5,254,17
 16597842,Student loan,Student loan,claude-haiku-5-5,773,6
 19571077,Mortgage,Mortgage,claude-haiku-5-5,607,7
-22647966,Credit card,UNMATCHED: Other,claude-haiku-5-5,586,4
+22647966,Credit card,Debt or credit management,claude-haiku-5-5,586,9
 15193979,Vehicle loan or lease,Credit reporting or other personal consumer reports,claude-haiku-5-5,920,17
 18888970,Checking or savings account,Checking or savings account,claude-haiku-5-5,487,9
 16075182,Prepaid card,Debt collection,claude-haiku-5-5,286,7
@@ -1668,9 +1664,7 @@ Wait, correcting that: the complaint concerns a water tre",claude-haiku-5-5,463,
 19385374,"Money transfer, virtual currency, or money service",Checking or savings account,claude-haiku-5-5,535,9
 19796147,Checking or savings account,Checking or savings account,claude-haiku-5-5,497,9
 24189149,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,1264,12
-19416754,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: Vehicle loan or lease
-
-Wait—correcting myself: the complaint concerns a home",claude-haiku-5-5,1383,30
+19416754,"Payday loan, title loan, personal loan, or advance loan",Vehicle loan or lease,claude-haiku-5-5,1383,12
 16953674,Credit card,Credit card,claude-haiku-5-5,429,6
 17808406,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,394,12
 16459117,"Money transfer, virtual currency, or money service",Checking or savings account,claude-haiku-5-5,713,9
@@ -1745,7 +1739,7 @@ Wait—correcting myself: the complaint concerns a home",claude-haiku-5-5,1383,3
 24362861,Credit card,Credit card,claude-haiku-5-5,687,6
 19682357,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,484,22
 15095594,Credit card,Credit card,claude-haiku-5-5,890,6
-15155670,Debt collection,UNMATCHED: I cannot determine the product category from this complaint. The text is a generic request to review attached documents and does,claude-haiku-5-5,283,30
+15155670,Debt collection,"UNMATCHED: I can't determine a product category from this complaint. It contains no mention of a financial product, account, or spec",claude-haiku-5-5,283,30
 21040968,Mortgage,Mortgage,claude-haiku-5-5,998,7
 24178517,Credit card,Credit card,claude-haiku-5-5,314,6
 23461496,Debt collection,Vehicle loan or lease,claude-haiku-5-5,2198,12
@@ -1865,7 +1859,7 @@ Wait—correcting myself: the complaint concerns a home",claude-haiku-5-5,1383,3
 24144972,"Payday loan, title loan, personal loan, or advance loan","Money transfer, virtual currency, or money service",claude-haiku-5-5,652,17
 15290019,"Payday loan, title loan, personal loan, or advance loan",Vehicle loan or lease,claude-haiku-5-5,293,12
 18336544,Student loan,Student loan,claude-haiku-5-5,746,6
-17961934,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: I can't determine the product category from this complaint. It doesn't name a financial product, and ""XXX",claude-haiku-5-5,218,30
+17961934,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: I can't determine a product category from this complaint. The text ""XXXX is what I was taking out on several",claude-haiku-5-5,218,30
 23968119,Vehicle loan or lease,"Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,660,22
 24614976,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,581,22
 20618236,Mortgage,Mortgage,claude-haiku-5-5,1280,7
@@ -1925,7 +1919,7 @@ Wait—correcting myself: the complaint concerns a home",claude-haiku-5-5,1383,3
 16915491,Student loan,Student loan,claude-haiku-5-5,813,6
 17471567,Debt or credit management,Credit reporting or other personal consumer reports,claude-haiku-5-5,653,17
 20851260,"Payday loan, title loan, personal loan, or advance loan",Vehicle loan or lease,claude-haiku-5-5,483,12
-22844354,Credit reporting or other personal consumer reports,"UNMATCHED: I can't determine a product category from this complaint, since it doesn't name a financial product or service. It only",claude-haiku-5-5,224,30
+22844354,Credit reporting or other personal consumer reports,"UNMATCHED: I can't determine which product category this complaint is about. The complaint doesn't mention a financial product,",claude-haiku-5-5,224,30
 19933115,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,223,17
 20406677,Mortgage,Mortgage,claude-haiku-5-5,693,7
 16374505,Credit card,Credit reporting or other personal consumer reports,claude-haiku-5-5,746,17
@@ -1945,7 +1939,7 @@ Wait—correcting myself: the complaint concerns a home",claude-haiku-5-5,1383,3
 18493052,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,716,12
 19882301,Student loan,Student loan,claude-haiku-5-5,489,6
 21023097,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,233,22
-18466050,Debt collection,"UNMATCHED: I can't determine the product category from this complaint. It mentions a disputed ""claim"" but doesn",claude-haiku-5-5,238,30
+18466050,Debt collection,"UNMATCHED: I can't determine the product category from this complaint alone. It mentions a ""claim"" being disputed but",claude-haiku-5-5,238,30
 18376948,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,715,22
 23200134,Prepaid card,Checking or savings account,claude-haiku-5-5,322,9
 21850729,Student loan,Student loan,claude-haiku-5-5,807,6
@@ -2013,7 +2007,7 @@ Wait—correcting myself: the complaint concerns a home",claude-haiku-5-5,1383,3
 23672764,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,647,12
 17813507,Prepaid card,"Money transfer, virtual currency, or money service",claude-haiku-5-5,312,17
 16828049,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,220,12
-20758215,Credit card,UNMATCHED: None of the above,claude-haiku-5-5,600,6
+20758215,Credit card,"Money transfer, virtual currency, or money service",claude-haiku-5-5,600,17
 22567453,Student loan,Student loan,claude-haiku-5-5,463,6
 22820361,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,624,12
 18063974,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,1005,22
@@ -2118,7 +2112,7 @@ Wait—correcting myself: the complaint concerns a home",claude-haiku-5-5,1383,3
 15782827,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,877,12
 15906192,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,807,12
 16196469,Debt collection,Debt collection,claude-haiku-5-5,278,7
-17004915,"Payday loan, title loan, personal loan, or advance loan",UNMATCHED: Uprova is a company offering a payment portal for a loan or account where the consumer makes schedu,claude-haiku-5-5,485,30
+17004915,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: I can't determine the exact product from this complaint alone, but the closest match is: Checking or savings",claude-haiku-5-5,485,30
 18902855,"Money transfer, virtual currency, or money service",Checking or savings account,claude-haiku-5-5,294,9
 24182646,Prepaid card,Checking or savings account,claude-haiku-5-5,227,9
 19873794,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,931,12
@@ -2227,9 +2221,7 @@ Wait—correcting myself: the complaint concerns a home",claude-haiku-5-5,1383,3
 15626227,Debt or credit management,Student loan,claude-haiku-5-5,549,6
 21175652,"Payday loan, title loan, personal loan, or advance loan",Debt or credit management,claude-haiku-5-5,712,9
 17809749,Debt or credit management,Credit reporting or other personal consumer reports,claude-haiku-5-5,635,17
-23941453,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: Vehicle loan or lease
-
-Wait, that's incorrect. The complaint is about a sol",claude-haiku-5-5,680,30
+23941453,"Payday loan, title loan, personal loan, or advance loan",Vehicle loan or lease,claude-haiku-5-5,680,12
 15233014,Vehicle loan or lease,Debt collection,claude-haiku-5-5,226,7
 23677041,Checking or savings account,Checking or savings account,claude-haiku-5-5,715,9
 18081386,Vehicle loan or lease,Credit reporting or other personal consumer reports,claude-haiku-5-5,370,17
@@ -2246,7 +2238,7 @@ Wait, that's incorrect. The complaint is about a sol",claude-haiku-5-5,680,30
 24188681,Debt collection,Debt collection,claude-haiku-5-5,715,7
 22558435,Checking or savings account,Checking or savings account,claude-haiku-5-5,466,9
 15807568,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,426,12
-16098240,Debt or credit management,UNMATCHED: I can't determine the product category from this complaint. It describes a phone conversation that didn't resolve,claude-haiku-5-5,241,30
+16098240,Debt or credit management,"UNMATCHED: I can't determine the product category from this complaint, as it doesn't mention any financial product",claude-haiku-5-5,241,29
 18062096,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,925,12
 15778842,Prepaid card,Prepaid card,claude-haiku-5-5,306,8
 20099797,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,1229,12
@@ -2259,7 +2251,7 @@ Wait, that's incorrect. The complaint is about a sol",claude-haiku-5-5,680,30
 15645805,Student loan,Student loan,claude-haiku-5-5,1038,6
 16704356,Mortgage,Mortgage,claude-haiku-5-5,1526,7
 23808688,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,757,17
-17969451,"Payday loan, title loan, personal loan, or advance loan",UNMATCHED: Personal loan,claude-haiku-5-5,544,7
+17969451,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,544,22
 19413811,Student loan,Student loan,claude-haiku-5-5,453,6
 21556179,Debt collection,Credit reporting or other personal consumer reports,claude-haiku-5-5,336,17
 16262223,Debt or credit management,Debt collection,claude-haiku-5-5,379,7
@@ -2428,9 +2420,7 @@ Wait, that's incorrect. The complaint is about a sol",claude-haiku-5-5,680,30
 16384697,Credit card,Credit card,claude-haiku-5-5,705,6
 16194040,Mortgage,Mortgage,claude-haiku-5-5,403,7
 21859746,Debt or credit management,Credit card,claude-haiku-5-5,458,6
-19947086,Credit card,"UNMATCHED: Checking or savings account
-
-Wait, let me correct that. The complaint concerns Capital One cred",claude-haiku-5-5,854,30
+19947086,Credit card,Checking or savings account,claude-haiku-5-5,854,9
 15089799,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,947,17
 18882873,Credit card,Credit reporting or other personal consumer reports,claude-haiku-5-5,274,17
 18718665,Debt or credit management,Debt or credit management,claude-haiku-5-5,355,9
@@ -2497,7 +2487,7 @@ Wait, let me correct that. The complaint concerns Capital One cred",claude-haiku
 19445186,Student loan,Student loan,claude-haiku-5-5,256,6
 20757284,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",claude-haiku-5-5,587,17
 17299579,Debt or credit management,Debt or credit management,claude-haiku-5-5,356,9
-16445983,Vehicle loan or lease,"UNMATCHED: I can't determine the product category from this complaint. It only contains a redacted account number and the status ""Char",claude-haiku-5-5,223,30
+16445983,Vehicle loan or lease,Debt collection,claude-haiku-5-5,223,7
 16983738,Student loan,Student loan,claude-haiku-5-5,461,6
 21910619,Checking or savings account,Checking or savings account,claude-haiku-5-5,1634,9
 15245307,Prepaid card,Prepaid card,claude-haiku-5-5,317,8
@@ -2531,7 +2521,9 @@ Wait, let me correct that. The complaint concerns Capital One cred",claude-haiku
 23221348,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,542,17
 16867555,Credit card,Credit card,claude-haiku-5-5,385,6
 23843571,Checking or savings account,Checking or savings account,claude-haiku-5-5,461,9
-15172975,Vehicle loan or lease,UNMATCHED: Vehicle loan or lease? No. The complaint concerns a loan agreement with a payment,claude-haiku-5-5,1235,30
+15172975,Vehicle loan or lease,"UNMATCHED: Vehicle loan or lease
+
+Wait, correcting that: the complaint concerns a loan",claude-haiku-5-5,1235,30
 15210124,Prepaid card,Prepaid card,claude-haiku-5-5,577,8
 15984133,Student loan,Student loan,claude-haiku-5-5,485,6
 19141447,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,443,22
@@ -2697,7 +2689,7 @@ Wait, let me correct that. The complaint concerns Capital One cred",claude-haiku
 19631450,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,515,12
 22551818,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,508,17
 16247866,Checking or savings account,Credit card,claude-haiku-5-5,301,6
-19098253,Debt or credit management,UNMATCHED: I can't determine a product category from this complaint. It describes a privacy breach involving medical information sent,claude-haiku-5-5,266,30
+19098253,Debt or credit management,UNMATCHED: I'm unable to determine a matching financial product category from this complaint. It describes a privacy issue,claude-haiku-5-5,266,30
 18994455,Checking or savings account,Prepaid card,claude-haiku-5-5,642,8
 21608729,Credit card,Credit card,claude-haiku-5-5,292,6
 19420012,"Money transfer, virtual currency, or money service",Checking or savings account,claude-haiku-5-5,361,9
@@ -2722,7 +2714,7 @@ Wait, let me correct that. The complaint concerns Capital One cred",claude-haiku
 21841442,Debt collection,Debt collection,claude-haiku-5-5,284,7
 22065338,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",claude-haiku-5-5,454,17
 23023632,Student loan,Student loan,claude-haiku-5-5,557,6
-22669058,"Money transfer, virtual currency, or money service",UNMATCHED: I can't determine a product category with confidence from this complaint. The complaint involves translation and certification of,claude-haiku-5-5,267,30
+22669058,"Money transfer, virtual currency, or money service","UNMATCHED: I can't determine a product category with confidence from this complaint, since it describes paying for translation and certification",claude-haiku-5-5,267,30
 16625127,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,1552,12
 22103487,Credit card,"Money transfer, virtual currency, or money service",claude-haiku-5-5,421,17
 19668575,Prepaid card,Checking or savings account,claude-haiku-5-5,1129,9
@@ -2804,9 +2796,7 @@ Wait, let me correct that. The complaint concerns Capital One cred",claude-haiku
 18987015,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,507,17
 18140715,Mortgage,Mortgage,claude-haiku-5-5,667,7
 19041904,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,663,12
-22167701,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: Vehicle loan or lease
-
-Wait, that is incorrect. The complaint concerns a",claude-haiku-5-5,787,30
+22167701,"Payday loan, title loan, personal loan, or advance loan",UNMATCHED: Personal loan,claude-haiku-5-5,787,7
 19453638,Prepaid card,Credit card,claude-haiku-5-5,431,6
 16554980,Prepaid card,Prepaid card,claude-haiku-5-5,484,8
 18063043,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,784,17
@@ -2818,9 +2808,7 @@ Wait, that is incorrect. The complaint concerns a",claude-haiku-5-5,787,30
 20961896,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",claude-haiku-5-5,398,17
 16417356,Mortgage,Mortgage,claude-haiku-5-5,455,7
 20060461,Prepaid card,Checking or savings account,claude-haiku-5-5,498,9
-24112963,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: Vehicle loan or lease
-
-Wait, correcting that: the complaint concerns a residential",claude-haiku-5-5,913,30
+24112963,"Payday loan, title loan, personal loan, or advance loan",Vehicle loan or lease,claude-haiku-5-5,913,12
 21537732,Debt or credit management,Debt collection,claude-haiku-5-5,315,7
 18354972,Prepaid card,Prepaid card,claude-haiku-5-5,426,8
 15774676,Credit card,Checking or savings account,claude-haiku-5-5,762,9
@@ -3086,7 +3074,7 @@ Wait, correcting that: the complaint concerns a residential",claude-haiku-5-5,91
 22834654,Credit card,Vehicle loan or lease,claude-haiku-5-5,342,12
 15334004,Checking or savings account,Checking or savings account,claude-haiku-5-5,391,9
 18081868,Mortgage,Mortgage,claude-haiku-5-5,704,7
-16475120,Debt or credit management,UNMATCHED: I can't determine the product category from this complaint. It only refers to an attached PDF that I don't have,claude-haiku-5-5,257,30
+16475120,Debt or credit management,"UNMATCHED: I can't determine the product category from this complaint, since it only references an attached PDF and contains no details about",claude-haiku-5-5,257,30
 15759407,Student loan,Student loan,claude-haiku-5-5,880,6
 21073813,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",claude-haiku-5-5,404,17
 17892023,"Money transfer, virtual currency, or money service",Checking or savings account,claude-haiku-5-5,221,9
@@ -3114,9 +3102,7 @@ Wait, correcting that: the complaint concerns a residential",claude-haiku-5-5,91
 20153044,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,489,22
 24130392,Mortgage,Mortgage,claude-haiku-5-5,747,7
 16825072,Mortgage,Credit reporting or other personal consumer reports,claude-haiku-5-5,291,17
-19343879,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: Money transfer, virtual currency, or money service
-
-Wait, that's incorrect. Let me",claude-haiku-5-5,428,30
+19343879,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,428,22
 21246607,Vehicle loan or lease,Credit reporting or other personal consumer reports,claude-haiku-5-5,278,17
 18045757,Mortgage,Mortgage,claude-haiku-5-5,359,7
 19636219,"Payday loan, title loan, personal loan, or advance loan","Money transfer, virtual currency, or money service",claude-haiku-5-5,301,17
@@ -3257,7 +3243,7 @@ Wait, that's incorrect. Let me",claude-haiku-5-5,428,30
 18258412,Student loan,Student loan,claude-haiku-5-5,1246,6
 23045670,Vehicle loan or lease,"UNMATCHED: Vehicle loan or lease
 
-Wait—correcting that: this complaint concerns a loan",claude-haiku-5-5,736,30
+Wait, that is incorrect. The complaint concerns a",claude-haiku-5-5,736,30
 23776884,Debt collection,Credit reporting or other personal consumer reports,claude-haiku-5-5,255,17
 18502879,Checking or savings account,Checking or savings account,claude-haiku-5-5,280,9
 20100954,Credit card,Credit card,claude-haiku-5-5,518,6
@@ -3434,9 +3420,7 @@ Wait—correcting that: this complaint concerns a loan",claude-haiku-5-5,736,30
 18226323,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,612,12
 19013308,Debt or credit management,Debt collection,claude-haiku-5-5,255,7
 18068861,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,923,12
-21892268,Credit card,"UNMATCHED: Vehicle loan or lease
-
-Wait, that's incorrect. The complaint concerns financ",claude-haiku-5-5,670,30
+21892268,Credit card,Vehicle loan or lease,claude-haiku-5-5,670,12
 20018071,Debt collection,Credit reporting or other personal consumer reports,claude-haiku-5-5,350,17
 21890029,Mortgage,Mortgage,claude-haiku-5-5,640,7
 19668172,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,758,22
@@ -3517,10 +3501,10 @@ Wait, that's incorrect. The complaint concerns financ",claude-haiku-5-5,670,30
 15090389,Credit card,Credit card,claude-haiku-5-5,761,6
 23756523,Checking or savings account,Checking or savings account,claude-haiku-5-5,804,9
 15100167,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,752,22
-20235934,Checking or savings account,"UNMATCHED: None of the listed categories fit this complaint. It concerns a retail order that was never delivered, not",claude-haiku-5-5,250,30
+20235934,Checking or savings account,"UNMATCHED: None of the listed categories fit this complaint. It concerns a retail order, not a financial product",claude-haiku-5-5,250,30
 22805511,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,568,17
 15099921,"Money transfer, virtual currency, or money service",Checking or savings account,claude-haiku-5-5,780,9
-18544721,Debt or credit management,UNMATCHED: None of the listed categories apply,claude-haiku-5-5,446,12
+18544721,Debt or credit management,UNMATCHED: I'm unable to determine a matching category: this text is an automated acknowledgment from the FCC,claude-haiku-5-5,446,30
 15015932,Prepaid card,Prepaid card,claude-haiku-5-5,305,8
 19702018,Mortgage,Mortgage,claude-haiku-5-5,609,7
 23553781,Mortgage,Mortgage,claude-haiku-5-5,1593,7
@@ -3632,7 +3616,7 @@ Wait, that's incorrect. The complaint concerns financ",claude-haiku-5-5,670,30
 15384538,Mortgage,Mortgage,claude-haiku-5-5,334,7
 23111422,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,931,22
 20117762,Debt or credit management,Credit reporting or other personal consumer reports,claude-haiku-5-5,287,17
-23204297,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: Personal loan, or advance loan",claude-haiku-5-5,971,13
+23204297,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: Personal loan, payday loan, title loan, or advance loan",claude-haiku-5-5,971,22
 15986602,Credit card,Credit card,claude-haiku-5-5,559,6
 21909182,Credit card,Credit card,claude-haiku-5-5,580,6
 15477447,Student loan,Student loan,claude-haiku-5-5,393,6
@@ -3830,7 +3814,7 @@ Wait, that's incorrect. The complaint concerns financ",claude-haiku-5-5,670,30
 23302220,Debt collection,Credit reporting or other personal consumer reports,claude-haiku-5-5,516,17
 23454452,Mortgage,Mortgage,claude-haiku-5-5,711,7
 20809281,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,673,12
-19684761,"Payday loan, title loan, personal loan, or advance loan",UNMATCHED: Personal loan,claude-haiku-5-5,685,7
+19684761,"Payday loan, title loan, personal loan, or advance loan",Vehicle loan or lease,claude-haiku-5-5,685,12
 19715335,Credit card,Credit card,claude-haiku-5-5,879,6
 20861108,Debt or credit management,Debt or credit management,claude-haiku-5-5,726,9
 15677436,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,907,17
@@ -4036,9 +4020,7 @@ Wait, that's incorrect. The complaint concerns financ",claude-haiku-5-5,670,30
 16440791,Debt or credit management,Credit reporting or other personal consumer reports,claude-haiku-5-5,540,17
 21678177,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,761,22
 18826467,Credit card,Credit card,claude-haiku-5-5,230,6
-15629581,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: Vehicle loan or lease
-
-Wait, correcting that: the complaint concerns an HV",claude-haiku-5-5,1329,30
+15629581,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,1329,22
 20185547,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",claude-haiku-5-5,474,17
 21017309,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",claude-haiku-5-5,359,22
 23773492,Debt or credit management,Credit reporting or other personal consumer reports,claude-haiku-5-5,221,17
@@ -4073,7 +4055,7 @@ Wait, correcting that: the complaint concerns an HV",claude-haiku-5-5,1329,30
 23999480,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,441,12
 22176596,Checking or savings account,Checking or savings account,claude-haiku-5-5,460,9
 15816414,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,585,12
-18380129,Debt or credit management,UNMATCHED: I'm not able to confidently map this to one of these categories. The complaint concerns a non-deliv,claude-haiku-5-5,308,30
+18380129,Debt or credit management,"UNMATCHED: None of the above categories apply, since this complaint concerns a non-delivered package from a seller rather",claude-haiku-5-5,308,30
 22518724,Credit card,Credit card,claude-haiku-5-5,792,6
 16266547,Debt or credit management,Debt collection,claude-haiku-5-5,223,7
 22612384,Credit card,Credit card,claude-haiku-5-5,1219,6
@@ -4093,10 +4075,10 @@ Wait, correcting that: the complaint concerns an HV",claude-haiku-5-5,1329,30
 18291055,"Money transfer, virtual currency, or money service",Checking or savings account,claude-haiku-5-5,241,9
 16373496,Debt or credit management,Credit reporting or other personal consumer reports,claude-haiku-5-5,225,17
 16011120,Student loan,Student loan,claude-haiku-5-5,282,6
-21512247,Student loan,"UNMATCHED: I can't determine the product category with confidence from this complaint, since it doesn't name the product. A pay",claude-haiku-5-5,254,30
-15990188,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: Money transfer, virtual currency, or money service
+21512247,Student loan,UNMATCHED: I can't determine the category with confidence from this complaint alone; it mentions a payment increase without spec,claude-haiku-5-5,254,30
+15990188,"Payday loan, title loan, personal loan, or advance loan","UNMATCHED: Vehicle loan or lease
 
-Wait, let me reconsider: the compla",claude-haiku-5-5,582,30
+Wait, that's not right. The complaint concerns a travel",claude-haiku-5-5,582,30
 17533663,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",claude-haiku-5-5,403,17
 17825960,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",claude-haiku-5-5,914,17
 16126675,Checking or savings account,Checking or savings account,claude-haiku-5-5,534,9
@@ -4413,7 +4395,7 @@ Wait, that is incorrect. The correct category is:",claude-haiku-5-5,751,30
 21843604,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",claude-haiku-5-5,569,17
 17005930,Checking or savings account,Checking or savings account,claude-haiku-5-5,476,9
 15512847,Mortgage,Mortgage,claude-haiku-5-5,435,7
-24703029,Credit reporting or other personal consumer reports,"UNMATCHED: I can't determine the product category from this complaint, since it doesn't name a specific financial product",claude-haiku-5-5,403,30
+24703029,Credit reporting or other personal consumer reports,"UNMATCHED: I can't determine the product category from this complaint, as it doesn't specify the type of account involved",claude-haiku-5-5,403,30
 15408351,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,308,17
 21011918,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,305,12
 16176380,Prepaid card,"Money transfer, virtual currency, or money service",claude-haiku-5-5,312,17
@@ -4537,7 +4519,7 @@ Wait, that is incorrect. The correct category is:",claude-haiku-5-5,751,30
 16866017,"Money transfer, virtual currency, or money service",Checking or savings account,claude-haiku-5-5,264,9
 21836000,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",claude-haiku-5-5,550,17
 23903972,Debt collection,Debt collection,claude-haiku-5-5,518,7
-16724977,Debt collection,"UNMATCHED: I'm unable to determine the product category from this complaint, as it does not mention a specific financial product",claude-haiku-5-5,225,30
+16724977,Debt collection,UNMATCHED: I can't determine the product category from this complaint. It describes unresponsiveness from a company but does,claude-haiku-5-5,225,30
 16457626,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",claude-haiku-5-5,431,17
 20528265,Mortgage,Mortgage,claude-haiku-5-5,565,7
 18906307,Debt or credit management,Credit reporting or other personal consumer reports,claude-haiku-5-5,415,17
@@ -4583,10 +4565,10 @@ Wait, that is incorrect. The correct category is:",claude-haiku-5-5,751,30
 19222389,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,698,12
 15197253,Prepaid card,Prepaid card,claude-haiku-5-5,358,8
 22103700,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,1550,17
-17040365,Credit card,"UNMATCHED: I'm not able to map this to one of the listed financial product categories with confidence, since the complaint conc",claude-haiku-5-5,291,30
-21517532,Vehicle loan or lease,"UNMATCHED: I can't determine the product category with confidence from this complaint, since it doesn't name the type of account or",claude-haiku-5-5,282,30
+17040365,Credit card,UNMATCHED: I'm not able to match this one to a category. It's about a retail purchase and a shipping dispute,claude-haiku-5-5,291,30
+21517532,Vehicle loan or lease,UNMATCHED: I can't determine the exact product from this complaint alone. It describes payments on an account that don't recon,claude-haiku-5-5,282,30
 18648614,Vehicle loan or lease,Vehicle loan or lease,claude-haiku-5-5,983,12
-18311622,Credit reporting or other personal consumer reports,"UNMATCHED: I can't determine the product category from this complaint, as it contains no information about the financial product involved",claude-haiku-5-5,245,30
+18311622,Credit reporting or other personal consumer reports,"UNMATCHED: I cannot determine the product category from this complaint, as it contains no information about the financial product involved",claude-haiku-5-5,245,30
 22641114,Student loan,Student loan,claude-haiku-5-5,429,6
 20518358,Student loan,Student loan,claude-haiku-5-5,811,6
 16007729,Student loan,Student loan,claude-haiku-5-5,418,6
@@ -4738,9 +4720,7 @@ Wait, that is incorrect. The correct category is:",claude-haiku-5-5,751,30
 22326872,Mortgage,Mortgage,claude-haiku-5-5,1397,7
 17613893,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",claude-haiku-5-5,489,17
 15299186,"Payday loan, title loan, personal loan, or advance loan",Vehicle loan or lease,claude-haiku-5-5,444,12
-17141701,Credit card,"UNMATCHED: Vehicle loan or lease
-
-Wait, correction: the complaint concerns a retail installment",claude-haiku-5-5,691,30
+17141701,Credit card,Vehicle loan or lease,claude-haiku-5-5,691,12
 18369403,Checking or savings account,Checking or savings account,claude-haiku-5-5,357,9
 15257894,Mortgage,Mortgage,claude-haiku-5-5,1575,7
 16637977,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",claude-haiku-5-5,255,17
@@ -4826,7 +4806,7 @@ Wait, correction: the complaint concerns a retail installment",claude-haiku-5-5,
 23206503,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,954,17
 22988761,Student loan,Debt collection,claude-haiku-5-5,277,7
 16068144,Credit reporting or other personal consumer reports,Credit reporting or other personal consumer reports,claude-haiku-5-5,715,17
-16973480,Debt collection,UNMATCHED: I can't determine a product category from this complaint. It's an unfilled template for a cease-and-des,claude-haiku-5-5,295,30
+16973480,Debt collection,UNMATCHED: I can't determine a product category from this complaint. It's a template letter with unfilled placeholders (,claude-haiku-5-5,295,30
 18875422,Prepaid card,Prepaid card,claude-haiku-5-5,396,8
 23158351,Debt or credit management,Debt or credit management,claude-haiku-5-5,629,9
 19034889,Mortgage,Mortgage,claude-haiku-5-5,746,7
@@ -4921,7 +4901,7 @@ Wait, correction: the complaint concerns a retail installment",claude-haiku-5-5,
 17179835,Debt or credit management,Debt or credit management,claude-haiku-5-5,1206,9
 21191189,Credit reporting or other personal consumer reports,Checking or savings account,claude-haiku-5-5,280,9
 21749073,Mortgage,Mortgage,claude-haiku-5-5,828,7
-17040515,Credit card,"UNMATCHED: Affirm is a buy-now-pay-later lender, and the complaint concerns an unauth",claude-haiku-5-5,696,30
+17040515,Credit card,Debt or credit management,claude-haiku-5-5,696,9
 19056788,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",claude-haiku-5-5,668,17
 23967568,"Money transfer, virtual currency, or money service",Checking or savings account,claude-haiku-5-5,759,9
 19733114,"Payday loan, title loan, personal loan, or advance loan","Money transfer, virtual currency, or money service",claude-haiku-5-5,364,17
