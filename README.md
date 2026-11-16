@@ -247,6 +247,34 @@ We also considered the following practical factors:
 - **Scalability:** Traditional machine learning models may be more economical for processing large complaint volumes.
 
 The recorded Claude API usage cost was approximately $1.14 for the logged portion of the experiments. This does not represent a complete production cost estimate.
+
+### 7.10 Business Recommendations
+
+Based on our findings, we recommend using Linear SVM as the initial model for complaint classification.
+
+The proposed complaint-routing process would:
+
+1. Receive a consumer complaint narrative.
+2. Preprocess the text and generate TF-IDF features.
+3. Predict the financial product category using Linear SVM.
+4. Route high-confidence predictions to the appropriate department.
+5. Send uncertain predictions to human reviewers.
+
+This approach could reduce manual classification effort while maintaining human oversight.
+
+However, the model should undergo further testing using real-world complaint distributions before operational deployment.
+
+### 7.11 Limitations and Future Work
+
+Several limitations should be considered:
+
+- The dataset was sampled to be nearly balanced across 11 product categories.
+- Real-world complaint volumes may have different category distributions.
+- Some financial product categories share similar terminology.
+- Model performance may change over time as complaint language evolves.
+- The proposed routing process has not been validated in a live operational environment.
+
+Future work could include probability calibration, additional model testing, and monitoring classification performance over time.
 ## 8. Repository Structure
 
 ```text
@@ -331,8 +359,9 @@ The main notebook contains the exploratory analysis, text preprocessing, text mi
 | Phase | Description | Status |
 |---|---|---|
 | Phase 1 | Project proposal, business problem, and research question | Completed |
-| Phase 2 | Exploratory data analysis, text mining, and sentiment analysis | Developed |
-| Phase 3 | Predictive modeling, model evaluation, and Claude API comparison | Planned |
+| Phase 2 | Exploratory data analysis, text mining, and sentiment analysis | Completed |
+| Phase 3 | Predictive modeling, model evaluation, and Claude API comparison | Completed |
+| Phase 4 | Robustness testing, confidence analysis, and business recommendations | Completed |
 
 ## 11. License
 
