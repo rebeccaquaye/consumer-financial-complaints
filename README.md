@@ -188,6 +188,36 @@ We compared eight classification approaches using the held-out test set.
 
 These results suggest that traditional machine learning models using TF-IDF features can perform competitively with large language models on specialized text classification tasks.
 
+### 7.6 Product-Word Masking and Robustness Testing
+
+We investigated whether the classification models relied heavily on explicit financial product terms.
+
+We masked 15 product-identifying phrases, including terms such as *mortgage*, *credit card*, and *student loan*.
+
+The Linear SVM results were:
+
+| Evaluation | Accuracy | Macro F1 |
+|---|---:|---:|
+| Original Narratives | 73.8% | 0.736 |
+| Masked Narratives | 72.2% | 0.721 |
+
+Masking changed the model's predictions for 677 of the 1,469 test complaints.
+
+The relatively small decrease in performance suggests that the model learns additional contextual information beyond explicit product names.
+
+### 7.7 Confidence-Aware Complaint Routing
+
+We examined Linear SVM decision margins to understand how prediction confidence relates to classification accuracy.
+
+- Lowest decision-margin quintile: 43.5% accuracy.
+- Highest decision-margin quintile: 98.0% accuracy.
+
+Complaints with smaller decision margins were more likely to be misclassified.
+
+These results suggest that a confidence-aware routing system could automatically process higher-confidence complaints while directing uncertain predictions to human reviewers.
+
+**Important:** SVM decision margins are not calibrated probabilities and should not be interpreted as direct probabilities of correct classification.
+
 
 ## 8. Repository Structure
 
