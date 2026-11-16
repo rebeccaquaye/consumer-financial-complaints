@@ -275,9 +275,7 @@ Several limitations should be considered:
 - The proposed routing process has not been validated in a live operational environment.
 
 Future work could include probability calibration, additional model testing, and monitoring classification performance over time.
-## 8. Repository Structure
 
-```text
 consumer-financial-complaints/
 │
 ├── Data/
@@ -285,21 +283,25 @@ consumer-financial-complaints/
 │   └── Data Dictionary.xlsx
 │
 ├── Notebook/
-│   ├── Ketty.ipynb
-│   └── Rebecca.ipynb
+│   ├── Rebecca_EDA.ipynb
+│   ├── Rebecca_Modelling.ipynb
+│   ├── Rebecca_Final_CFPB_Consumer_Complaints.ipynb
+│   ├── Ketty_EDA.ipynb
+│   ├── Ketty_Modelling.ipynb
+│   └── Ketty_Final_CFPB_Consumer_Complaints.ipynb
+│
+├── outputs/
+│   ├── rebecca_modelling/
+│   └── unified_analysis/
 │
 ├── src/
-│   ├── data_utils.py
-│   ├── make_sample.py
-│   ├── preprocessing.py
-│   └── text_analysis.py
+│   └── Supporting Python scripts
 │
 ├── .gitignore
-├── index.ipynb
+├── Final_Index.ipynb
 ├── LICENSE
 ├── README.md
 └── requirements.txt
-```
 
 ### Main Project Files
 
@@ -344,15 +346,46 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Step 5: Open the Main Notebook
+### Step 5: Install the spaCy Language Model
 
-Open `index.ipynb` in VS Code or Jupyter Notebook.
+Some semantic similarity experiments require the spaCy English language model.
 
-Make sure the dataset is available in the `Data/` folder.
+```bash
+python -m spacy download en_core_web_md
+```
 
-Select the appropriate Python environment and run the notebook cells in order.
+### Step 6: Open the Main Notebook
 
-The main notebook contains the exploratory analysis, text preprocessing, text mining, sentiment analysis, and planned predictive modeling approach.
+Open **`Final_Index.ipynb`** in VS Code or Jupyter Notebook.
+
+Ensure that:
+
+- The CFPB dataset is available in the `Data/` folder.
+- The appropriate Python environment is selected.
+- All required dependencies are installed.
+- Any API credentials needed for optional Claude experiments are configured securely.
+
+Run the notebook cells in order.
+
+### Step 7: Review the Results
+
+The main notebook includes:
+
+- Exploratory data analysis.
+- Text preprocessing and text mining.
+- Sentiment analysis.
+- Multiclass complaint classification.
+- Model performance comparisons.
+- Product-word masking experiments.
+- Confidence analysis.
+- Business recommendations and conclusions.
+
+Additional modeling notebooks are available in the `Notebook/` folder.
+
+Saved evaluation results and visualizations are available in the `outputs/` folder.
+
+**Reproducibility Note:** Some Claude API experiments may require valid API credentials and incur usage costs. Previously saved outputs can be reviewed without rerunning those API requests.
+
 
 ## 10. Project Status
 
