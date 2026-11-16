@@ -117,46 +117,58 @@ Our exploratory analysis suggests that:
 - Sentiment scores can be influenced by financial terminology.
 - Further modeling is needed to evaluate how accurately complaints can be classified.
 
-## 7. Phase 3: Planned Predictive Modeling
+## 7. Phase 3: Predictive Modeling
 
-In Phase 3, we plan to develop and compare multiclass classification models.
+We developed and evaluated multiclass classification models to predict financial product categories from consumer complaint narratives.
 
-### 7.1 Machine Learning Models
+### 7.1 Data Preparation
 
-We plan to use TF-IDF features with:
+After removing exact duplicate narratives, 4,895 unique complaints remained.
+
+We used a stratified 70/30 train-test split:
+
+- Training set: 3,426 complaints
+- Test set: 1,469 complaints
+- Random state: 42
+
+### 7.2 Machine Learning Models
+
+We trained and compared the following models:
 
 1. Multinomial Logistic Regression
 2. Multinomial Naive Bayes
 3. Linear Support Vector Machine (SVM)
 
-We will use a stratified 70/30 training and testing split.
+These models used TF-IDF features extracted from complaint narratives.
 
-### 7.2 Model Evaluation
+We also evaluated:
 
-We plan to evaluate model performance using:
+- Sentence-transformer similarity using MiniLM
+- spaCy semantic similarity
+- Claude zero-shot classification
+- Majority-class baseline
+
+### 7.3 Model Evaluation
+
+We evaluated classification performance using:
 
 - Accuracy
 - Macro F1-score
-- Precision and recall for each product category
+- Precision and recall by product category
 - Confusion matrices
+- Five-fold cross-validation on the training data
 
-Macro F1-score will be an important metric because we want to evaluate performance across all 11 product categories.
+Macro F1-score was particularly important for evaluating performance across all 11 financial product categories.
 
-### 7.3 Product-Word Masking
+### 7.4 Additional Experiments
 
-We plan to investigate whether classification models rely heavily on explicit product-related words.
+We also conducted experiments involving:
 
-For example, words such as *mortgage*, *credit card*, and *student loan* may directly reveal the associated product category.
+- Product-word masking to assess potential information leakage.
+- SVM decision-margin analysis to examine prediction confidence.
+- Subgroup analysis to investigate differences in model performance.
+- Claude API comparisons to evaluate LLM classification performance.
 
-We will compare model performance before and after masking selected product-related terms.
-
-### 7.4 Claude API Comparison
-
-We also plan to explore using the Claude API to classify a sample of complaint narratives.
-
-We will compare its predictions with traditional machine learning models and examine differences in classification performance.
-
-We will also consider privacy, cost, consistency, and scalability.
 
 ## 8. Repository Structure
 
