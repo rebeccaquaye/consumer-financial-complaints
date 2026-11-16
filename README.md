@@ -275,7 +275,9 @@ Several limitations should be considered:
 - The proposed routing process has not been validated in a live operational environment.
 
 Future work could include probability calibration, additional model testing, and monitoring classification performance over time.
+## 8. Repository Structure
 
+```text
 consumer-financial-complaints/
 │
 ├── Data/
@@ -295,14 +297,14 @@ consumer-financial-complaints/
 │   └── unified_analysis/
 │
 ├── src/
-│   └── Supporting Python scripts
+│   └── (Supporting Python scripts)
 │
 ├── .gitignore
 ├── Final_Index.ipynb
 ├── LICENSE
 ├── README.md
 └── requirements.txt
-
+```
 ### Main Project Files
 
 - **`index.ipynb`** – Main notebook containing the combined project analysis.
