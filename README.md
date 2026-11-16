@@ -169,6 +169,25 @@ We also conducted experiments involving:
 - Subgroup analysis to investigate differences in model performance.
 - Claude API comparisons to evaluate LLM classification performance.
 
+### 7.5 Model Performance Results
+
+We compared eight classification approaches using the held-out test set.
+
+| Model | Test Accuracy | Macro F1 |
+|---|---:|---:|
+| Linear SVM | 73.8% | 0.736 |
+| Logistic Regression | 72.7% | 0.727 |
+| Claude Zero-Shot | 72.6% | 0.724 |
+| Multinomial Naive Bayes | 70.3% | 0.697 |
+| MiniLM (Complaint-Informed) | 48.7% | 0.474 |
+| MiniLM (Label-Only) | 43.5% | 0.411 |
+| spaCy Similarity | 21.4% | 0.177 |
+| Majority-Class Baseline | 9.3% | 0.016 |
+
+**Best-performing model:** Linear SVM, achieving 73.8% accuracy and a macro F1-score of 0.736.
+
+These results suggest that traditional machine learning models using TF-IDF features can perform competitively with large language models on specialized text classification tasks.
+
 
 ## 8. Repository Structure
 
