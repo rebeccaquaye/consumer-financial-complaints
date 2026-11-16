@@ -218,7 +218,35 @@ These results suggest that a confidence-aware routing system could automatically
 
 **Important:** SVM decision margins are not calibrated probabilities and should not be interpreted as direct probabilities of correct classification.
 
+### 7.8 Subgroup Analysis
 
+We examined classification performance across financial product categories to identify areas where the model performed well and where improvements were needed.
+
+The analysis showed that some financial products were more difficult to distinguish because their complaint narratives contained overlapping terminology.
+
+In particular, complaints involving debt and credit-related products presented classification challenges.
+
+These findings highlight the importance of evaluating per-category precision, recall, and F1-scores rather than relying solely on overall accuracy.
+
+### 7.9 Claude API Comparison and Considerations
+
+We evaluated Claude as a zero-shot classifier and compared its performance with traditional machine learning models.
+
+Claude achieved:
+
+- Test accuracy: 72.6%
+- Macro F1-score: 0.724
+
+Linear SVM performed slightly better, achieving 73.8% accuracy and a macro F1-score of 0.736.
+
+We also considered the following practical factors:
+
+- **Privacy:** Complaint narratives may contain sensitive consumer information.
+- **Cost:** API-based classification introduces usage costs.
+- **Consistency:** Model predictions should be evaluated for stability.
+- **Scalability:** Traditional machine learning models may be more economical for processing large complaint volumes.
+
+The recorded Claude API usage cost was approximately $1.14 for the logged portion of the experiments. This does not represent a complete production cost estimate.
 ## 8. Repository Structure
 
 ```text
