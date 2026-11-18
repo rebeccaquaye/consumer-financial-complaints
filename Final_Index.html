@@ -12369,35 +12369,97 @@ No Claude API calls are executed by this unified notebook.
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cb6a94b8">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="10.-Conclusions-and-business-recommendation">10. Conclusions and business recommendation<a class="anchor-link" href="#10.-Conclusions-and-business-recommendation">¶</a></h2><h3 id="10.1-What-the-unified-results-show">10.1 What the unified results show<a class="anchor-link" href="#10.1-What-the-unified-results-show">¶</a></h3><ul>
-<li><strong>Best supervised model:</strong> Linear SVM, selected by <strong>training five-fold cross-validation</strong> (macro F1 <strong>0.719</strong>), achieved <strong>73.8% held-out accuracy</strong> and <strong>0.736 macro F1</strong> on 1,469 complaints. Logistic Regression was close (<strong>72.7% accuracy; 0.727 macro F1</strong>), followed by Naïve Bayes (<strong>70.3%; 0.697</strong>). The majority-class baseline achieved <strong>9.3% accuracy</strong>.</li>
-<li><strong>Claude zero-shot:</strong> Cached, ID-aligned predictions achieved <strong>72.6% accuracy and 0.724 macro F1</strong>, including <strong>16 missing/off-list responses counted as incorrect</strong>. Performance was close to the leading supervised models, but the workflow requires sending narratives to an external API and incurs usage costs.</li>
-<li><strong>Embedding similarity:</strong> MiniLM with complaint-informed descriptions achieved <strong>48.7% accuracy / 0.474 macro F1</strong>; MiniLM with label-only descriptions achieved <strong>43.5% / 0.411</strong>; spaCy with complaint-informed descriptions achieved <strong>21.4% / 0.177</strong>. These are <strong>similarity-based classifiers</strong>, not supervised fine-tuned embedding models. Description sources differ, so comparisons do not isolate a single causal factor.</li>
-<li><strong>Where the selected model struggles:</strong> Debt or Credit Management has the lowest recall (<strong>52.6%</strong>), whereas Mortgage (<strong>89.0%</strong>) and Student Loan (<strong>88.2%</strong>) are classified more reliably. Several confusion pairs involve related financial products.</li>
-<li><strong>Vocabulary sensitivity:</strong> Masking explicit product expressions in both train and test narratives reduced SVM macro F1 from <strong>0.736 to 0.721</strong>, a modest decline of 0.015 macro-F1 points (1.5 percentage points).</li>
-</ul>
-<h3 id="10.2-Practical-recommendation">10.2 Practical recommendation<a class="anchor-link" href="#10.2-Practical-recommendation">¶</a></h3><p>Use <strong>locally executed Linear SVM with TF-IDF as the leading pilot candidate</strong>, with a <strong>human-review queue</strong> for uncertain or high-impact cases. Do <strong>not</strong> treat uncalibrated SVM decision margins as probabilities; first calibrate scores and set review thresholds on validation data. Claude zero-shot may be useful as a carefully governed comparison or escalation option, subject to privacy, security, and cost approval. Monitor class-level recall—particularly Debt or Credit Management—rather than relying on overall accuracy alone.</p>
-<h3 id="10.3-Limitations">10.3 Limitations<a class="anchor-link" href="#10.3-Limitations">¶</a></h3><p>The sample is approximately class-balanced rather than representative of production traffic; narrative duplication was filtered, but text may contain redactions or template language. Reference descriptions and cached LLM predictions may have been generated under different prompts. The complaint IDs used to generate the cached reference descriptions were not retained here, so description-source overlap during training-only k selection cannot be independently excluded. The state comparisons are descriptive, no calibrated routing threshold was validated, and <strong>no prospective production evaluation</strong> was performed. All conclusions concern this held-out sample, not guaranteed real-world performance.</p>
-</div>
-</div>
-</div>
-</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d8ced98b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="11.-Reproducibility,-data-provenance,-and-limitations">11. Reproducibility, data provenance, and limitations<a class="anchor-link" href="#11.-Reproducibility,-data-provenance,-and-limitations">¶</a></h2><p><strong>Files and environment.</strong> Execute from the repository root or its <code>Notebook/</code> directory. The analysis reads <code>Data/cfpb_complaints_sample_2025-08_to_2026-07.csv</code>, project helpers under <code>src/</code>, and cached descriptions, zero-shot predictions, and spending logs. The initial setup cell contains all library imports. Optional embedding experiments require the spaCy <code>en_core_web_md</code> model and the <code>all-MiniLM-L6-v2</code> sentence-transformer weights.</p>
+<h2 id="10.-Reproducibility,-data-provenance,-and-limitations">10. Reproducibility, data provenance, and limitations<a class="anchor-link" href="#10.-Reproducibility,-data-provenance,-and-limitations">¶</a></h2><p><strong>Files and environment.</strong> Execute from the repository root or its <code>Notebook/</code> directory. The analysis reads <code>Data/cfpb_complaints_sample_2025-08_to_2026-07.csv</code>, project helpers under <code>src/</code>, and cached descriptions, zero-shot predictions, and spending logs. The initial setup cell contains all library imports. Optional embedding experiments require the spaCy <code>en_core_web_md</code> model and the <code>all-MiniLM-L6-v2</code> sentence-transformer weights.</p>
 <p><strong>Evaluation protocol.</strong> After removing exact duplicate narratives, the notebook creates one stratified 70/30 split (seed 42). Supervised classifiers are selected using five-fold training-only cross-validation and evaluated once on the holdout. The Claude predictions are matched by complaint ID; absent or off-list responses are counted as errors. Cached complaint-informed descriptions were created in earlier experiments, and their source complaint IDs are not available for independent verification; the description-size choice is therefore exploratory.</p>
 <p><strong>Outputs.</strong> Model metrics, classification reports, robustness tables, and charts are saved to <code>outputs/unified_analysis/</code>. The original individual notebooks remain development records; this notebook is the integrated group analysis.</p>
 <p><strong>Interpretation limits.</strong> The product-balanced sample does not reproduce the actual distribution of incoming complaints. Some narratives are redacted or templated, and no live routing workflow, independently validated confidence threshold, demographic fairness audit, or full team-wide API cost audit was conducted. Results should be interpreted as an offline comparison on the supplied CFPB sample.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=216add37">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="11.-AI-Usage-Log">11. AI Usage Log<a class="anchor-link" href="#11.-AI-Usage-Log">¶</a></h1><p>Throughout this project, we used AI tools to support selected stages of our natural language processing analysis, including product-description generation and complaint classification. We evaluated the resulting outputs against our project objectives and available labeled data rather than assuming that AI-generated results were automatically correct.</p>
+<p>The following log documents the main AI-assisted tasks, their purposes, the outputs generated, and how we evaluated or incorporated those outputs into our analysis.</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Task</th>
+<th>Prompt / Instruction</th>
+<th>Output</th>
+<th>Decision</th>
+<th>Verification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude</td>
+<td>Generate product descriptions from category labels</td>
+<td>Generate descriptions of the 11 CFPB financial product categories using only their category names, without referencing complaint narratives.</td>
+<td>Product descriptions representing the 11 financial categories.</td>
+<td>We used the descriptions as reference texts for our semantic similarity experiments.</td>
+<td>We evaluated the resulting similarity-based classifications against the actual CFPB product labels using accuracy and macro F1.</td>
+</tr>
+<tr>
+<td>Claude</td>
+<td>Generate complaint-informed product descriptions</td>
+<td>Generate descriptions of the financial product categories using examples from the training complaints, with experiments using 5, 10, and 20 complaints per category.</td>
+<td>Product descriptions informed by examples of consumer complaint language.</td>
+<td>We compared these descriptions with the label-only descriptions to investigate whether additional context improved semantic similarity classification.</td>
+<td>We evaluated the resulting predictions against the held-out test labels and compared their classification performance.</td>
+</tr>
+<tr>
+<td>Claude Haiku</td>
+<td>Zero-shot complaint classification</td>
+<td>Classify each consumer complaint into one of the 11 predefined CFPB financial product categories using the complaint narrative.</td>
+<td>Predicted financial product categories for the complaints.</td>
+<td>We included Claude as an alternative to traditional supervised machine-learning models.</td>
+<td>We matched the saved predictions to complaint IDs and compared them with the actual CFPB labels. Claude achieved 72.6% test accuracy and a macro F1-score of 0.724.</td>
+</tr>
+<tr>
+<td>Claude Haiku</td>
+<td>Identify and handle invalid classification outputs</td>
+<td>Return a financial product category from the predefined list of 11 valid categories.</td>
+<td>Most responses contained valid product categories, but 16 predictions were missing or outside the accepted category list.</td>
+<td>We retained these cases in the evaluation and counted them as incorrect predictions rather than excluding them.</td>
+<td><strong>Verified error:</strong> We detected the 16 missing or invalid outputs by checking the saved predictions against the 11 accepted categories. We accounted for these errors in the final evaluation to avoid overstating Claude's performance.</td>
+</tr>
+<tr>
+<td>Claude API</td>
+<td>Monitor API usage and costs</td>
+<td>Execute the required product-description and classification tasks while recording API expenses.</td>
+<td>Saved Claude responses and API cost records totaling $1.14.</td>
+<td>We reused cached responses in the final notebook to avoid unnecessary API calls.</td>
+<td>We reviewed the recorded API expenses and confirmed the team's total expenditure of $1.14. The final notebook loads previously saved responses without making additional API requests.</td>
+</tr>
+<tr>
+<td>ChatGPT and Claude</td>
+<td>Python coding, debugging, and notebook integration</td>
+<td>We used both ChatGPT and Claude to assist with writing and improving Python code, troubleshooting errors, organizing the analysis, and merging our two individual notebooks into one unified analysis.</td>
+<td>The tools provided Python code suggestions, debugging solutions, explanations, and recommendations for combining our individual analyses into a consistent notebook.</td>
+<td>We reviewed and refined the AI-generated suggestions, resolved coding issues, and integrated the relevant analyses into our final unified notebook.</td>
+<td>We ran the Python code, checked the outputs against our datasets, reviewed the model evaluation results, and verified that the merged notebook maintained consistent data preparation, modeling procedures, and reported findings.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="AI-Output-Verification-and-Lessons-Learned">AI Output Verification and Lessons Learned<a class="anchor-link" href="#AI-Output-Verification-and-Lessons-Learned">¶</a></h3><p>Our analysis showed that AI-generated outputs require validation before they can be used in business analytics.</p>
+<p>One important example occurred during Claude's zero-shot classification experiment. Although Claude produced valid categories for most complaints, <strong>16 predictions were either missing or did not match the 11 accepted financial product categories</strong>.</p>
+<p>We identified these problems by matching the cached predictions to the complaint IDs and checking the predicted labels against the predefined product categories.</p>
+<p>Rather than removing the problematic observations, we counted them as incorrect classifications. This ensured that Claude's reported performance reflected both its classification ability and its output-format limitations.</p>
+<p>We also compared the performance of Claude-generated product descriptions using the actual CFPB labels. This allowed us to assess whether the descriptions were useful for classification instead of relying solely on their apparent linguistic quality.</p>
+<p>Overall, AI tools supported our analysis, but the final modeling decisions were based on reproducible evaluation metrics, comparisons with traditional machine-learning models, and documented checks of the available outputs.</p>
+<p><strong>Key takeaway:</strong> AI can support text analysis and model development, but its outputs must be independently evaluated before they are used to inform business decisions.</p>
 </div>
 </div>
 </div>
